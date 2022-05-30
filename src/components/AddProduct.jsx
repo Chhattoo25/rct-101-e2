@@ -1,4 +1,5 @@
 import React from "react";
+import { Button,Select,Input,RadioGroup,Radio,ModalBody } from "@chakra-ui/react";
 
 const AddProduct = () => {
   // TODO: Remove below const and instead import them from chakra
@@ -17,8 +18,8 @@ const AddProduct = () => {
         <ModalBody pb={6}>
           <Input data-cy="add-product-title" />
           <Select data-cy="add-product-category">
-            <option data-cy="add-product-category-shirt"></option>
-            <option data-cy="add-product-category-pant"></option>
+            <option data-cy="add-product-category-shirt">male</option>
+            <option data-cy="add-product-category-pant">female</option>
             <option data-cy="add-product-category-jeans"></option>
           </Select>
           <RadioGroup data-cy="add-product-gender">
